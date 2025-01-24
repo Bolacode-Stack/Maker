@@ -380,7 +380,7 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
     border: 2px solid var(--aqua);
   } 
 
-  .errorOne {
+  .error {
     font-size: 12px;
     font-weight: 500;
     color: var(--errors);
