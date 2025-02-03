@@ -1,7 +1,6 @@
 const makerForm = document.querySelector('#makerForm');
 const makerButton = document.querySelector('.button');
 
-
 function validateInput(e)  {
     e.preventDefault();
     let firstError = errorOne();
@@ -9,6 +8,10 @@ function validateInput(e)  {
     const makerInput = document.querySelector('#input');
     if (makerInput.value === '')  {
         makerInput.insertAdjacentElement('afterend', firstError)
+        return; 
+    } else if (makerInput.value !== 'name@yahoo.com')  {
+        makerInput.insertAdjacentElement('afterend', secondError)
+        makerForm.removeEventListener('submit', validateInput)
         return;
     }
 }
@@ -31,4 +34,6 @@ function errorTwo()  {
     return errorTwo;
 }
 
+
 makerForm.addEventListener('submit', validateInput);
+
