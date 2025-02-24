@@ -34,6 +34,4 @@ function errorTwo()  {
     return errorTwo;
 }
 
-
 makerForm.addEventListener('submit', validateInput);
-
