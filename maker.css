@@ -43,7 +43,7 @@
 
   body {
     color: var(--white);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     padding-block: 40px;
     font-family: 'Manrope';
     background-color: var(--body);
@@ -136,7 +136,6 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
     margin-block-end: 143px;
     padding-block-start: 32px;
   }
-
 
   /* Blue Boxes */  
   .box-svgs {
@@ -345,6 +344,7 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
 
   /* Form Styling */
 input, .button {
+  font-size: 0.93em;
   border-radius: 24px;
 }
 
@@ -362,15 +362,17 @@ input, .button {
 
 .button:hover  {
   color: var(--white);
+  transition: 0.5s ease;
   background-color: inherit;
   border: 2px solid var(--aqua);
 }
 
 input:focus {
+  transition: 0.5s ease;
   border: 2px solid var(--aqua);
 }
 
-input {
+input  {
   border: none;
   height: 40px;
   outline: none;
@@ -378,9 +380,12 @@ input {
   grid-column: 1  / 6;
   background-color: var(--light-blue);
   }
-
+  
   input::placeholder {
-    margin-left: 20px;
+    left: 18px;
+    opacity: 40%;
+    position: relative;
+    font-weight: bold;
   }
 
   .error {
@@ -405,8 +410,7 @@ input {
     }
 
     .hero-text {
-      top: 77px;
-      position: relative;
+      grid-column: 1 / -1;
     }
     
     .hero-text {
@@ -415,7 +419,7 @@ input {
       height: 254px;
       grid-column: 4 / -1;
       text-align: center;
-      margin-block-end: 100px;
+      /* margin-block-end: 50px; */
       grid-template-columns: repeat(6, 95px);
     }
 
@@ -619,7 +623,7 @@ input {
         grid-template-rows: repeat(2, 200px);
         grid-template-columns: repeat(6, 62px);
       }
-
+    
       .box > * {
         grid-column: 1 / -1;
       }
