@@ -696,6 +696,7 @@ input  {
       }
 
       .footer-squiggle {
+        left: 30px;
         width: 1664px;
         height: 224px;
         position: relative;
