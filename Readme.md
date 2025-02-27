@@ -59,7 +59,7 @@ I just wanna keep getting better and improve my skills even further. I learnt Al
 
 ### Acknowledgements
 
-I wanna thank me. I built this project on my own, i did follow any tutorial and no slimeball sat down next to me, which is nice. 
+I wanna thank me. I built this project on my own, I didn't follow any tutorial and no slimeball sat next to me, which is nice. 
 
 Leave a star if you like this repo, Bye 👋. 
 
