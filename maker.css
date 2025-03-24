@@ -43,7 +43,6 @@
 
   body {
     color: var(--white);
-    /* overflow-x: hidden; */
     padding-block: 40px;
     font-family: 'Manrope';
     background-color: var(--body);
@@ -231,7 +230,6 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
   }
   
   .sub-section p {
-    /* max-width: 50ch; */
     grid-column: 1 / -1;
     text-align: center;
   }
@@ -294,7 +292,6 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
   
   .second {
     color: var(--body);
-    /* margin-block-start: 32px; */
     background-color: var(--aqua);
   }
   
@@ -322,12 +319,16 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
   .footer-squiggle {
     top: 100px;
     right: 60px;
+    width: 584px;
+    height: 80px;
     position: relative;
   }
 
   .contents {
+    z-index: 1;
     display: grid;
     margin-inline: 23.5px;
+    padding-block-end: 50px;
     grid-template-rows: repeat(3, 72.66px);
     grid-template-columns: repeat(5, 65.6px);
   }
@@ -520,19 +521,12 @@ input  {
     }
 
     /* maker box */
-
-    .boxes {
-      /* display: grid; */
-    }
-
     .sub-section > p {
       text-align: center;
     }
 
     .boxes {
       gap: 10px;
-      /* display: grid; */
-      /* grid-template-columns: repeat(8, 55.625px); */
     }
 
     .maker-box {
@@ -540,7 +534,6 @@ input  {
       width: 445px;
       height: 488px;
       grid-column: 3;
-      /* margin-inline: 161px; */
       position: relative;
     }
 
@@ -591,7 +584,7 @@ input  {
     }
     } 
 
-    @media(width > 1439px)  {
+    @media(width > 1440px)  {
       body {
         padding-block: 81px;
       }
@@ -615,7 +608,6 @@ input  {
       }
  
       .picture-2 {
-        /* left: 170px; */
         width: 396px;
         height: 444px;
         grid-column: 12;
@@ -632,6 +624,10 @@ input  {
       }
 
       /* Boxes section */
+      .blue-boxes {
+        overflow-y: hidden;
+      }
+
       .box {
         display: grid;
         column-gap: 5px;
@@ -703,6 +699,14 @@ input  {
       } 
 
       /* Footer */
+      .footer {
+        overflow-y: hidden;
+      }
+
+      .footer, .contents {
+        z-index: 1;
+      }
+      
       .contents {
         grid-column: 4;
         grid-template-rows: repeat(2, 67px);
@@ -711,6 +715,7 @@ input  {
 
       .footer-squiggle {
         left: 2px;
+        z-index: 1;
         width: 1700px;
         height: 224px;
         position: relative;
