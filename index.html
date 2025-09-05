@@ -167,15 +167,20 @@
                     <div class="squiggle">
                     </div>
                         <!-- (1) -->
-                    <form id="makerForm" class="contents">
+                    <div class="contents">
                                     <h2>Get notified when we launch</h2>
                                     <!-- (2) -->
-                                        <input type="text"
-                            placeholder="Email address" id="input">
+                                        <input type="email"
+                            placeholder="Email address" id="maker-input" oninput="">
+                            <div class="error-container">
+                            </div>
                             <!-- (3) -->
-                            <button class="button">Get notified</button>
-                                </form>
-                            </footer>  
+                            <button class="button" id="maker-button">Get notified</button>
+                            <div class="error-container">
+                            <p class="error-message">Oops! That doesn't look like an email address</p>
+                            </div>
+                            </div>
+                        </footer>  
                     </body>
                     <script src="maker.js"></script>
                             </html>

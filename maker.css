@@ -19,7 +19,7 @@
   /* Colour variabes */
   :root { 
       --white: #Ffffff;
-    --aqua: #3ee9e0;
+    --success: #3ee9e5;
     --errors: #ff2965;
     --body: #080C20;
     /* --body: rgb(8, 12, 32); */
@@ -361,14 +361,14 @@ input, .button {
   font-weight: 550;
   border-radius: 24px;
   color: var(--light-blue);
-  background-color: var(--aqua);
+  background-color: var(--success);
 }
 
 .button:hover  {
   color: var(--white);
   transition: 0.5s ease;
   background-color: inherit;
-  border: 2px solid var(--aqua);
+  border: 2px solid var(--success);
 }
 
 input:focus {
@@ -392,12 +392,15 @@ input  {
     font-weight: bold;
   }
 
-  .error {
-    display: inline;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--errors);
+  .error-container {
+    grid-column: 1 / -1;
   }
+  
+  .error-container > .error-message {
+    display: none;
+    font-size: 0.75rem;
+    color: var(--errors);
+  };
 
   @media(width >= 48em)  {
     body {
@@ -583,6 +586,14 @@ input  {
       width: 1022px; 
       position: relative;
     }
+
+    .error-container {
+      align-self: start;
+      /* display: none; */
+      grid-column: 1 / -1;
+      color: var(--errors);
+      color: firebrick;
+    }
     } 
 
     @media(width > 1440px)  {
@@ -707,11 +718,11 @@ input  {
       .footer, .contents {
         z-index: 1;
       }
-      
+
+      /* Form  */
       .contents {
-        grid-column: 4;
-        grid-template-rows: repeat(2, 67px);
-        grid-template-columns: repeat(12, 60.83px);
+        width: 80%
+
       }
 
       .footer-squiggle {
@@ -723,12 +734,20 @@ input  {
       }
 
       .contents h2 {
-        grid-column: 2 / -1;
+        /* grid-column: 2 / -1; */
       }
 
      input {
         grid-row: 2;
         grid-column: 3 / 10;
+        font-family: inherit;
+      }
+
+      .error-message {
+        grid-row: 2;
+        font-size: 12px;
+        grid-column: 1 / -1;
+        color: var(--errors)
       }
 
       .button {
@@ -736,10 +755,4 @@ input  {
         margin-left: 16px;
         grid-column: 10 / 13;
       }       
-    }
-
-
-
-        
-
-  
+    };
