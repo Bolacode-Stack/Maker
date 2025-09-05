@@ -79,6 +79,7 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
 
   .nav .logo { 
     grid-column: 2;
+    cursor: pointer;
     margin-block-end: 65.5px;
   }
 
@@ -579,7 +580,7 @@ input  {
     .footer-squiggle {
       right: 230px;
       height: 140px;
-      width: 1022px;
+      width: 1022px; 
       position: relative;
     }
     } 
