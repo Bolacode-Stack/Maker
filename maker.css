@@ -19,7 +19,7 @@
   /* Colour variabes */
   :root { 
       --white: #Ffffff;
-    --success: #3ee9e5;
+    --aqua: #3ee9e5;
     --errors: #ff2965;
     --body: #080C20;
     /* --body: rgb(8, 12, 32); */
@@ -361,14 +361,14 @@ input, .button {
   font-weight: 550;
   border-radius: 24px;
   color: var(--light-blue);
-  background-color: var(--success);
+  background-color: var(--aqua);
 }
 
 .button:hover  {
   color: var(--white);
   transition: 0.5s ease;
   background-color: inherit;
-  border: 2px solid var(--success);
+  border: 2px solid var(--aqua);
 }
 
 input:focus {
@@ -388,8 +388,8 @@ input  {
   input::placeholder {
     left: 18px;
     opacity: 40%;
+    font-size: 15px;
     position: relative;
-    font-weight: bold;
   }
 
   .error-container {
@@ -404,16 +404,16 @@ input  {
 
   @media(width >= 48em)  {
     body {
-      padding-block: 3em;
+      padding-block: 1em;
     }
 
     .main-grid {
       column-gap: 10px;
-      grid-template-columns: 40px repeat(12, calc((100% - 48px - 10px * 11) / 12));
+      grid-template-columns: 40px repeat(12, calc((48em - 48px * 11) / 12))40px;
     }
     
     .nav .logo { 
-      grid-column: 2;
+      grid-column: 3;
     }
 
     .hero-text {
