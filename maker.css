@@ -83,13 +83,16 @@ font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
     margin-block-end: 65.5px;
   }
 
-  .main-grid {
-    display: grid;
-    column-gap: 10px;
-    overflow-x: hidden;
-    grid-template-columns: 110px repeat(5, calc((100% - 10px * 5) / 5)) 110px;
+  @media(width >= 375px)  {
+    .main-grid {
+      display: grid;
+      column-gap: 10px;
+      overflow-x: hidden;
+      grid-template-columns: 110px repeat(2, calc((100% - 60px * 2) / 2));
+    }
   }
- 
+
+    
   /* Hero */
   .hero-image {
     grid-row: 1;
@@ -404,12 +407,13 @@ input  {
 
   @media(width >= 48em)  {
     body {
-      padding-block: 1em;
+      padding-block: 3em;
     }
 
     .main-grid {
+      display: grid;
       column-gap: 10px;
-      grid-template-columns: 40px repeat(12, calc((48em - 48px * 11) / 12))40px;
+      grid-template-columns: 40px repeat(12, calc((48em - 48px  * 11) / 12));
     }
     
     .nav .logo { 
@@ -603,7 +607,7 @@ input  {
 
       .main-grid {
         column-gap: 30px;
-        grid-template-columns: 165px repeat(12, calc((100% - 65px * 11) / 12)) 165px;
+        /* grid-template-columns: 165px repeat(12, calc((100% - 65px * 11) / 12)) 165px; */
       }
 
       .hero .hero-text {
