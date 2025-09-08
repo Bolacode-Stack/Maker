@@ -399,7 +399,7 @@ input  {
     grid-column: 1 / -1;
   }
   
-  .error-container > .error-message {
+  .error-container > .message-text {
     display: none;
     font-size: 0.75rem;
     color: var(--errors);
