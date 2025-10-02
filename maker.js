@@ -5,8 +5,7 @@ let mailRegex = /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
 
 makerInput.addEventListener('input', (e)  =>  {
     let input = e.target.value;
-    console.log(input);
-    makerButton.addEventListener("click", (e)  => {
+    makerButton.addEventListener("submit", (e)  => {
         if (input.match(mailRegex))  {
          messageText.innerText = 'Message Sent!'
         messageText.style.display = 'block';
