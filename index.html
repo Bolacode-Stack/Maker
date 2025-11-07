@@ -1,183 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maker</title>
-    <link rel="icon" type="x-icon" href="Assets/favicon-32x32.png">
-    <link rel="stylesheet" href="maker.css">
-</head>
-<body>
+    <link rel="icon" type="x-icon" href="Assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="maker.css" />
+  </head>
+  <body>
     <!-- Nav and Logo -->
     <header>
-        <nav class="main-grid nav tablet">
-            <img src="Assets/logo.svg" alt="" class="logo" height="" width="">
-        </nav>
+      <nav class="main-grid nav tablet">
+        <img src="Assets/logo.svg" alt="" class="logo" height="" width="" />
+      </nav>
     </header>
-    
+
     <!-- Hero -->
     <!-- Hero Tablet -->
-     <section class="main-grid hero">
-         
-         <!-- (1) -->
-     <picture class="picture-1">
+    <section class="main-grid hero">
+      <!-- (1) -->
+      <picture class="picture-1">
         <!-- Desktop and Tablet -->
-         <source media="(width >= 48em)" srcset="assets/illustration-hero-left.svg" width="314" height="343" class="hero-left" class="hero-left hero-svg">
-         
-         <!-- Mobile -->
-         <img src="assets/illustration-hero-mobile.png" alt="" class="hero-image" width="410" height="233">
-        </picture>
-        
+        <source
+          media="(width >= 48em)"
+          srcset="assets/illustration-hero-left.svg"
+          width="314"
+          height="343"
+          class="hero-left"
+          class="hero-left hero-svg"
+        />
+
+        <!-- Mobile -->
+        <img
+          src="assets/illustration-hero-mobile.png"
+          alt=""
+          class="hero-image"
+          width="410"
+          height="233"
+        />
+      </picture>
+
+      <!-- (2) -->
+      <picture class="picture-2">
+        <source
+          media="(width >= 48em)"
+          srcset="assets/illustration-hero-right.svg"
+          width="317"
+          height="358"
+          class="hero-right hero-svg"
+        />
+
+        <img src="" alt="" class="" class="right-hero" />
+      </picture>
+
+      <div class="hero-text">
+        <img
+          src="assets/bg-hero-squiggle.svg"
+          alt=""
+          class="hero-squiggle"
+          width="386"
+          height="268"
+        />
+        <h1>Get paid for the work you <span class="love">love</span> to do.</h1>
+        <p class="maker-para">
+          The 9-5 grind is so last century. We believe in living life on your
+          own terms. Whether you’re looking to escape the rat race or set up a
+          side hustle, we’ve got you covered.
+        </p>
+
+        <!-- svgs -->
+        <img src="Assets/icon-scroll.svg" alt="" class="scroll" />
+      </div>
+    </section>
+
+    <!-- blue boxes section -->
+    <section class="main-grid blue-boxes">
+      <!-- <div class="boxes desktop-boxes"> -->
+      <!-- (1) -->
+      <div class="box one">
+        <div class="svgs">
+          <img
+            src="Assets/illustration-passions.svg"
+            alt=""
+            class="box-svgs passion"
+          />
+        </div>
+        <div class="boxes-text">
+          <h3>Indulge your passions</h3>
+          <p>
+            Your passions shouldn't be just for the weekend. Earn a living doing
+            what you love.
+          </p>
+        </div>
+      </div>
+
+      <!-- (2) -->
+      <div class="box two">
+        <div class="svgs">
+          <img
+            src="Assets/illustration-financial-freedom.svg"
+            alt=""
+            class="box-svgs finance"
+          />
+        </div>
+        <div class="boxes-text">
+          <h3>Gain financial freedom</h3>
+          <p>
+            Start making money work for you. There’s nothing quite like earning
+            while you sleep.
+          </p>
+        </div>
+      </div>
+
+      <!-- (3) -->
+      <div class="box three">
+        <div class="svgs">
+          <img
+            src="Assets/illustration-lifestyle.svg"
+            alt=""
+            class="box-svgs lifestyle"
+          />
+        </div>
+        <div class="boxes-text">
+          <h3>Choose your lifestyle</h3>
+          <p>
+            Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
+            your week.
+          </p>
+        </div>
+      </div>
+
+      <!-- (4) -->
+      <div class="box four">
+        <div class="svgs">
+          <img
+            src="Assets/illustration-work-anywhere.svg"
+            alt=""
+            class="box-svgs work"
+          />
+        </div>
+        <div class="boxes-text">
+          <h3>Work from anywhere</h3>
+          <p>
+            Selling online means not being pinned down. Want to work AND travel?
+            Go for it!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sub section -->
+    <section class="main-grid">
+      <div class="sub-section">
+        <h3 class="sub-heading">Our pricing plans</h3>
+        <p>
+          We only make money when our creators make money. Our plans are always
+          affordable, and it’s completely free to get started.
+        </p>
+      </div>
+    </section>
+
+    <!-- boxes section-->
+    <section class="main-grid">
+      <!-- <div class="boxes"> -->
+
+      <div class="first maker-box">
+        <img src="Assets/icon-free.svg" alt="" class="icons" />
+        <h3>Dip your toe</h3>
+        <p>
+          Just getting started? No problem at all! Our free plan will take you a
+          long way.
+        </p>
+        <h1>Free</h1>
+        <!-- (1) -->
+        <div class="check">
+          <img src="Assets/icon-check.svg" alt="" /><small
+            >Unlimited products</small
+          >
+        </div>
+
         <!-- (2) -->
-        <picture class="picture-2">
-             <source media="(width >= 48em)" srcset="assets/illustration-hero-right.svg" width="317" height="358" class="hero-right hero-svg">
+        <div class="check">
+          <img src="Assets/icon-check.svg" alt="" /><small
+            >Basic analytics</small
+          >
+        </div>
 
-             <img src="" alt="" class="" class="right-hero">
-         </picture>
-         
-         <div class="hero-text">
-             <img src="assets/bg-hero-squiggle.svg" alt="" class="hero-squiggle" width="386" height="268">
-                <h1>Get paid for the work you <span class="love">love</span> to do.</h1>
-                <p class="maker-para"> The 9-5 grind is so last century. We believe in living life on your own terms. Whether you’re looking to escape the rat race or set up a side hustle, we’ve got you covered. </p>
-         
-                <!-- svgs -->
-                <img src="Assets/icon-scroll.svg" alt="" class="scroll">
-            </div>
-        </section>
-        
-        <!-- blue boxes section -->
-     <section class="main-grid blue-boxes">
-        <!-- <div class="boxes desktop-boxes"> -->
-            <!-- (1) -->
-            <div class="box one">
-                <div class="svgs">
-                    <img src="Assets/illustration-passions.svg" alt="" class="box-svgs passion">
-                </div>
-                <div class="boxes-text">
-                    <h3>Indulge your passions</h3>
-                    <p> Your passions shouldn't be just for the weekend. Earn a living doing what you love.</p>
-                </div>
-                </div>
+        <!-- (3) -->
+        <div class="check">
+          <img src="Assets/icon-check.svg" alt="" /><small
+            >Limited marketplace exposure</small
+          >
+        </div>
 
-            <!-- (2) -->
-             <div class="box two">
-                <div class="svgs">
-                    <img src="Assets/illustration-financial-freedom.svg" alt="" class="box-svgs finance">
-                </div>
-                    <div class="boxes-text">
-                    <h3>Gain financial freedom</h3>
-                    <p> Start making money work for you. There’s nothing quite like earning while you sleep.</p>
-                </div>
-                </div>
+        <!-- (4) -->
+        <div class="check last">
+          <img src="Assets/icon-check.svg" alt="" /><small
+            >10% fee per transaction</small
+          >
+        </div>
+      </div>
 
-             <!-- (3) -->
-              <div class="box three">
-                <div class="svgs">
-                    <img src="Assets/illustration-lifestyle.svg" alt="" class="box-svgs lifestyle">
-                </div>
-                    <div class="boxes-text">
-                        <h3>Choose your lifestyle</h3>
-                    <p> Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week. </p>
-                </div>
-            </div>
+      <!-- Second Box -->
+      <div class="second maker-box">
+        <img src="Assets/icon-paid.svg" alt="" class="icons" />
+        <h3>Dive right in</h3>
+        <p>
+          Ready for the big time? Our paid plan will help you take your business
+          to the next level.
+        </p>
+        <h1>$25.00 <span class="month">/ month</span></h1>
 
-              <!-- (4) -->
-               <div class="box four">
-                <div class="svgs">
-                    <img src="Assets/illustration-work-anywhere.svg" alt="" class="box-svgs work">
-                </div>
-                <div class="boxes-text">
-                    <h3>Work from anywhere</h3>
-                    <p> Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
-            </div>
-            </div>
-        </section>
+        <!-- (1) -->
+        <div class="check">
+          <img src="Assets/icon-navy.svg" alt="" /><small>Custom domain</small>
+        </div>
 
-        <!-- sub section -->
-        <section class="main-grid">
-            <div class="sub-section">
-                <h3 class="sub-heading">Our pricing plans</h3>
-                <p>We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.</p>
-            </div>
-        </section>
-            
-            <!-- boxes section-->
-             <section class="main-grid">
-                <!-- <div class="boxes"> -->
+        <!-- (2) -->
+        <div class="check">
+          <img src="Assets/icon-navy.svg" alt="" /><small
+            >Advanced analytics and reports</small
+          >
+        </div>
 
-                    <div class="first maker-box">
-                        <img src="Assets/icon-free.svg" alt="" class="icons">
-                        <h3>Dip your toe</h3>
-                        <p>Just getting started? No problem at all! Our free plan will take you a long way. </p>
-                        <h1>Free</h1>
-                     <!-- (1) -->
-                     <div class="check">
-                         <img src="Assets/icon-check.svg" alt=""><small>Unlimited products</small>
-                        </div>
-                        
-                        <!-- (2) -->
-                        <div class="check">
-                            <img src="Assets/icon-check.svg" alt=""><small>Basic analytics</small>
-                        </div>
-                        
-                        <!-- (3) -->
-                        <div class="check"> 
-                            <img src="Assets/icon-check.svg" alt=""><small>Limited marketplace exposure</small>
-                        </div>
-                        
-                        <!-- (4) -->
-                        <div class="check last">
-                            <img src="Assets/icon-check.svg" alt=""><small>10% fee per transaction</small>
-                        </div>
-                    </div>
-                    
-                    <!-- Second Box -->
-                    <div class="second maker-box">
-                        <img src="Assets/icon-paid.svg" alt="" class="icons">
-                        <h3>Dive right in</h3>
-                        <p>Ready for the big time? Our paid plan will help you take your business to the next level.</p>
-                        <h1>$25.00 <span class="month">/ month</span></h1>
-                        
-                        <!-- (1) -->
-                        <div class="check">
-                            <img src="Assets/icon-navy.svg" alt=""><small>Custom domain</small>
-                        </div>
-                        
-                        <!-- (2) -->
-                        <div class="check">
-                            <img src="Assets/icon-navy.svg" alt=""><small>Advanced analytics and reports</small>
-                        </div>
-                        
-                        <!-- (3) -->
-                        <div class="check">
-                            <img src="Assets/icon-navy.svg" alt=""><small>High marketplace visibility</small>
-                        </div>
-                        
-                        <!-- (4) -->
-                        <div class="check last">
-                            <img src="Assets/icon-navy.svg" alt=""><small>5% fee per transaction</small>
-                        </div>
-                    </div>
-                <!-- </div> -->
-                </section>
-                
-                <!-- Footer -->
-                <footer class="main-grid footer">
-                    <img src="Assets/bg-footer-squiggle.svg" alt="" width="480" height="80" class="footer-squiggle">
-                    <div class="contents">
-                        <h2>Get notified when we launch</h2>
-                        <form action=""  class="form">
+        <!-- (3) -->
+        <div class="check">
+          <img src="Assets/icon-navy.svg" alt="" /><small
+            >High marketplace visibility</small
+          >
+        </div>
 
-                                        <!-- (input)  -->
-                                             <input type="email"
-                                             placeholder="Email address" id="maker-input" oninput="">
-                                            <!-- (button) -->
-                                                <button class="button" id="maker-button">Get notified</button>
-                                            <p class="message-text">Oops! That doesn't look like an email address</p>
-                                        </form>
-                                        </div>
-                                    </footer>  
-                                    
-                                </body>
-                    <script src="maker.js"></script>
-                            </html>
+        <!-- (4) -->
+        <div class="check last">
+          <img src="Assets/icon-navy.svg" alt="" /><small
+            >5% fee per transaction</small
+          >
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-grid footer">
+      <img
+        src="Assets/bg-footer-squiggle.svg"
+        alt=""
+        width="480"
+        height="80"
+        class="footer-squiggle"
+      />
+      <div class="contents">
+        <h2>Get notified when we launch</h2>
+        <form action="" class="form">
+          <!-- (input)  -->
+          <input
+            type="email"
+            placeholder="Email address"
+            id="maker-input"
+            oninput=""
+          />
+          <!-- (button) -->
+          <button class="button" id="maker-button">Get notified</button>
+          <p class="message-text">
+          </p>
+        </form>
+      </div>
+    </footer>
+  </body>
+  <script src="maker.js"></script>
+</html>
