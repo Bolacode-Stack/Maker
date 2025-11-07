@@ -28,6 +28,7 @@
 
 /* Spacing */
 :root {
+  --reg: 1rem;
   --space-md: 2rem;
   --space-sm: 1.5rem;
 }
@@ -69,7 +70,7 @@ h3 {
 p {
   margin: 0;
   font-family: inherit;
-  font-size: 0.975rem;
+  font-size: var(--reg);
   color: var(--dark-grey);
 }
 
@@ -79,22 +80,22 @@ button {
 
 .main-grid {
   display: grid;
-  column-gap: 10px;
   overflow-x: hidden;
+  column-gap: calc(var(--reg) - 0.375rem);
   grid-template-columns: 110px repeat(2, calc((100% - 60px * 2) / 2));
 }
 
-.nav .logo {
+.nav > .logo {
   grid-column: 2;
   cursor: pointer;
-  margin-block-end: 65.5px;
+  margin-bottom: calc(var(--space-md) * 2);
 }
 
 /* Hero */
 .hero-image {
   grid-row: 1;
   grid-column: 1;
-  margin-block-end: 47.5px;
+  margin-block-end: calc(var(--space-md) + var(--reg));
 }
 
 .hero-squiggle {
@@ -120,7 +121,7 @@ button {
 .hero-text h1 {
   max-width: 12ch;
   text-align: center;
-  margin-block-end: 23px;
+  margin-block-end: var(--space-sm);
 }
 
 .maker-para {
@@ -134,53 +135,41 @@ button {
 }
 
 .scroll {
-  margin-block-end: 143px;
-  padding-block-start: 32px;
+  padding-block-start: var(--space-md);
+  margin-block-end: calc(var(--space-md) * 4);
 }
 
 /* Blue Boxes */
-.box-svgs {
-  padding: 25px 25px;
-  border-radius: 45px;
-  margin-bottom: 2em;
-  background-color: var(--light-blue);
-}
-
 .box {
   grid-column: 2;
 }
 
+.box-svgs {
+  margin-bottom: var(--space-md);
+  background-color: var(--light-blue);
+  padding: var(--space-sm) var(--space-sm);
+  border-radius: calc(var(--space-md) + 0.8125rem);
+}
+
 /* boxes text */
 .boxes-text {
-  right: 130px;
   display: grid;
-  row-gap: 11px;
+  grid-column: 2;
   position: relative;
-  margin-inline: 24px;
-  margin-bottom: 56px;
+  margin-inline: var(--space-md);
+  right: calc(var(--space-md) * 4.5);
+  row-gap: calc(var(--reg) - 0.3125rem);
+  margin-bottom: calc(var(--space-md) * 2);
   grid-template-columns: repeat(8, 40.875px);
 }
 
 .boxes-text > * {
-  justify-self: start;
-  grid-column: 1 / -1;
-}
-
-.boxes-text h3 {
-  grid-column: 3 / 9;
-}
-
-.boxes-text p {
-  max-width: 40ch;
   grid-column: 2 / -1;
-}
-
-.main-grid .boxes-text {
-  position: relative;
+  text-align: center;
 }
 
 .work {
-  padding: 20px;
+  padding: calc(var(--space-md) - 0.2rem);
 }
 
 /* sub section */
@@ -188,10 +177,10 @@ button {
   display: grid;
   row-gap: 27px;
   grid-column: 1;
-  margin-inline: 24px;
-  margin-bottom: 70px;
-  margin-block-start: 25px;
+  margin-inline: var(--space-sm);
   grid-template-rows: repeat(2, auto);
+  margin-block-start: var(--space-sm);
+  margin-bottom: calc(var(--space-md) * 2.2);
   grid-template-columns: repeat(8, 40.875px);
 }
 
@@ -200,38 +189,38 @@ button {
 }
 
 .sub-section h3 {
-  grid-column: 3 / 9;
+  font-size: var(--space-sm);
 }
 
-.sub-section p {
-  grid-column: 1 / -1;
+.sub-section h3,
+p {
   text-align: center;
 }
 
 /* boxes */
 .maker-box {
-  margin-top: 30px;
   grid-column: 1 / -1;
-  border-radius: 8px;
-  margin-inline: 24px;
-  margin-block-end: 2rem;
+  margin-top: var(--space-sm);
+  margin-inline: var(--space-sm);
   background-color: var(--errors);
+  margin-block-end: var(--space-md);
+  border-radius: calc(var(--space-sm) / 3);
 }
 
-.first, 
+.first,
 .second {
   height: fit-content;
 }
 
 .first {
-  padding: 30px;
   color: var(--white);
+  padding: var(--space-sm);
   background-color: var(--light-blue);
 }
 
 .first h1,
 h3 {
-  margin-block-start: 26px;
+  margin-block-start: calc(var(--reg) + 0.5rem);
 }
 
 .first p {
@@ -239,12 +228,12 @@ h3 {
   opacity: 59.73%;
   max-width: 27ch;
   color: var(--white);
-  margin-block-start: 19px;
+  margin-block-start: calc(var(--space-sm) - 0.3125rem);
 }
 
 /* icons  */
 .first-icon {
-  top: -55px;
+  bottom:60px;
   position: relative;
 }
 
@@ -253,38 +242,39 @@ h3 {
 }
 
 small {
-  margin-left: 15.32px;
+  margin-left: var(--reg);
 }
 
 /* Second box */
 .month {
-  bottom: 10px;
   opacity: 60%;
-  font-size: 15px;
   font-weight: 300;
   position: relative;
+  font-size: var(--reg);
+  bottom: calc(var(--reg) - 0.375rem);
 }
 
 .second-icon {
-  bottom: 40px;
   position: relative;
+  bottom: calc(var(--space-md) + 1.3rem);
 }
 
 .second {
   color: var(--body);
-  padding-inline: 30px;
+  padding-block: var(--reg);
   background-color: var(--aqua);
+  padding-inline: calc(var(--space-sm) + 0.375rem);
 }
 
 .second p {
   opacity: 60%;
   line-height: 1.6;
-  margin-block-start: 19px;
+  margin-block-start: calc(var(--reg) + 0.1875rem);
 }
 
 .second h1,
 h3 {
-  margin-block-start: 24px;
+  margin-block-start: calc(var(--reg) + 0.5rem);
 }
 
 .second p {
@@ -304,15 +294,15 @@ h3 {
 .contents {
   z-index: 1;
   display: grid;
-  margin-inline: 23.5px;
-  padding-block-end: 50px;
+  margin-top: var(--space-sm);
+  margin-inline: var(--space-sm);
   grid-template-rows: repeat(3, 72.66px);
   grid-template-columns: repeat(5, 65.6px);
+  padding-block-end: var(--space-md) + 1.75rem;
 }
 
 .contents {
   grid-column: 1;
-  margin-block-start: 20px;
 }
 
 .contents h2 {
@@ -324,32 +314,32 @@ h3 {
 /* Form Styling */
 .form {
   display: grid;
-  row-gap: 23px;
   grid-column: 1 / -1;
+  row-gap: var(--space-sm);
   grid-template-rows: repeat(2, auto);
 }
 
 input,
 .button {
-  font-size: 0.93em;
-  border-radius: 24px;
+  font-size: var(--reg);
+  border-radius: var(--space-sm);
+  padding: calc(var(--reg) - 0.1rem);
 }
 
 .form > input {
   border: none;
-  height: 40px;
   outline: none;
-  margin-top: 22px;
   position: relative;
   color: var(--white);
+  margin-top: var(--space-sm);
   background-color: var(--light-blue);
 }
 
 input::placeholder {
-  left: 18px;
   opacity: 40%;
-  font-size: 15px;
   position: relative;
+  font-size: var(--reg);
+  left: calc(var(--reg) + 0.2rem);
 }
 
 .form > .button {
@@ -360,11 +350,10 @@ input::placeholder {
   border: 0;
   cursor: pointer;
   font-weight: 550;
-  padding: 11px 10px;
-  border-radius: 24px;
   color: var(--light-blue);
   background-color: var(--aqua);
-
+  border-radius: var(--space-sm);
+  
   &:hover {
     color: var(--white);
     transition: 0.5s ease;
@@ -380,7 +369,7 @@ input::placeholder {
 /* @layer tablet { */
 @media (width >= 48em) {
   body {
-    padding-block: 3em;
+    padding-block: calc(var(--reg) * 3);
   }
 
   .main-grid {
