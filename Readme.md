@@ -13,7 +13,7 @@
 
 ## Screenshot
 
-![](./DevMode/Maker-Desktop.png)
+![](./Screenshots%20📸/Maker-Desktop.png)
 
 ### Links
 - Solution URL: [Coming Soon](#Coming-Soon)
