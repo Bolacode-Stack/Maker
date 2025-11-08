@@ -5,7 +5,6 @@ const mailRegex = /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$
 
 makerInput.addEventListener('input', (e)  =>  {
     let input = e.target.value;
-    console.log(input)
     makerButton.addEventListener("click", (e)  => {
         e.preventDefault();
         if (input.match(mailRegex))  {
@@ -16,7 +15,7 @@ makerInput.addEventListener('input', (e)  =>  {
         } else if (makerInput.value == "" || !input.match(mailRegex))  {
            messageText.style.display = 'block';
             makerInput.style.border = "2px solid #FF2965";
-            messageText.innerText = "Oops that doesn't lool like an email address"
+            messageText.innerText = "Oops! That doesn't look like an email address"
             messageText.style.color = "#FF2965";
         }
         makerInput.value = "";
