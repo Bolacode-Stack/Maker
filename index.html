@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maker</title>
-    <link rel="icon" type="x-icon" href="Assets/favicon-32x32.png" />
+    <link rel="icon" type="x-icon" href="Assets/icon-free.svg" />
     <link rel="stylesheet" href="maker.css" />
   </head>
   <body>
@@ -248,24 +248,21 @@
         width="480"
         height="80"
         class="footer-squiggle"
-      />
-      <div class="contents">
+        />
+
+        <!-- Maker form  -->
+        <form action="" class="contents">
         <h2>Get notified when we launch</h2>
-        <form action="" class="form">
-          <!-- (input)  -->
           <input
-            type="email"
-            placeholder="Email address"
-            id="maker-input"
-            oninput=""
+          type="email"
+          placeholder="Email address"
+          id="maker-input" class="input"
           />
-          <!-- (button) -->
-          <button class="button" id="maker-button">Get notified</button>
+           <input type="submit" id="maker-button" value="Get notified" class="button">
           <p class="message-text">
           </p>
-        </form>
-      </div>
-    </footer>
+      </form>
+      </footer>
   </body>
   <script src="maker.js"></script>
 </html>
