@@ -23,15 +23,15 @@ makerInput.addEventListener('input', (e)  =>  {
         }
         makerInput.value = "";
         })  
-    });
-
+    })
+    
     const formValues = (event)  => {
         event.preventDefault();
 
+        let values = [];
         const formData = new FormData(makerForm);
         const item = formData.get('item');
-
-        let values = item;
+        values.push(item);
   }
 
     makerForm.addEventListener("submit", formValues)
