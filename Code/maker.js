@@ -19,6 +19,7 @@ makerInput.addEventListener('input', (e)  =>  {
             makerInput.style.border = "2px solid #FF2965";
             messageText.innerText = error;
             messageText.classList.add("error");
+            messageText.style.color = '#FF2965';
         }
         makerInput.value = "";
         })  
