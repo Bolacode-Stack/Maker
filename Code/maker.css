@@ -332,8 +332,12 @@ input::placeholder {
 .message-text {
   margin-top: 4px;
   grid-column: 1 / -1;
-  color: var(--errors);
   font-size: calc(var(--reg) - 0.25);
+}
+
+.error {
+  display: block;
+  color: var(--errors);
 }
 
 @media (width >= 48em) {
